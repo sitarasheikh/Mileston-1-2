@@ -1,11 +1,15 @@
-const toggleButton = document.getElementById('toggleButton') as HTMLElement;
+const toggleButton = document.getElementById('toggle-skills') as HTMLButtonElement;
+
+const skills =document.getElementById('skills') as HTMLElement;
 
 toggleButton.addEventListener('click', () => {
-    const skillsSection = document.getElementById('skillsSection') as HTMLElement;
-    if (skillsSection.style.display === 'none') {
-        skillsSection.style.display = 'block';
+    
+    if (skills.style.display === 'none') {
+        skills.style.display = 'block';
     } else {
-        skillsSection.style.display = 'none';
+        skills.style.display = 'none';
     }
 });
+
+
 
